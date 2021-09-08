@@ -21,9 +21,9 @@ var numeri=[1,2,3];
 
 
 
-console.log(lettere);
+console.log("Array di lettere ",lettere);
 
-console.log(numeri);
+console.log("Array di numeri ",numeri);
 
 
 
