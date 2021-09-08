@@ -59,14 +59,23 @@ var zucchine = [
 console.log(zucchine);
 var piùDi=[];
 var menoDi=[];
+var pesoZucchineCorte=0;
+var pesoZucchineLunghe=0;
 
 for(var key in zucchine){
     if(zucchine[key]["lunghezza"]>15){
         piùDi.push(zucchine[key]["lunghezza"]);
+        pesoZucchineLunghe+=zucchine[key]["peso"];
     }else{
         menoDi.push(zucchine[key]["lunghezza"]);
+        pesoZucchineCorte+=zucchine[key]["peso"];
+
     }
     
 }
 console.log(`L'array con lunghezza superiore a 15 cm, è: ${piùDi}`);
 console.log(`L'array con lunghezza inferiore a 15 cm, è: ${menoDi}`);
+
+console.log("le zucchine lunghe pesano: "+ pesoZucchineLunghe);
+console.log("le zucchine corte pesano: "+ pesoZucchineCorte);
+
