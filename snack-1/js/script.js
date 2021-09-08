@@ -59,6 +59,6 @@ var somma=0;
 
 for(var i=0; i<zucchina.length;i++){
     somma+= zucchina[i]["peso"];
-    console.log("Il peso individuale della zucchina "+i+ " è: "+zucchina[i]["peso"]);
+    console.log("Il peso individuale della zucchina "+(i+1)+ " è: "+zucchina[i]["peso"]);
 }
 console.log("La somma dei pesi delle zucchine è: "+somma);
