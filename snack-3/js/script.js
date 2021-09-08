@@ -2,7 +2,7 @@
 // girata (es. Ciao -> oaiC)
 
 
-// funzione che gira una stringa 
+// funzione che gira una stringa utilizzando split("")/reverse()/join("")
 function reverseStrg(stringa){
 
     // trasforma la stringa in un array di indice pari a le lettere della stringa a partire da 0
@@ -17,6 +17,26 @@ function reverseStrg(stringa){
     return arrayToString;
 }
 
+// funzione che gira una stringa utilizzando il ciclo for
+function reverseCycle(stringa){
+    var reverse="";
+    for(var i = stringa.length-1; i>=0;i--){
+        reverse +=stringa[i];
+    }
+    return reverse;
+}
+
+
+
+
 var prova = "Ciao";
-console.log(prova);
-console.log(reverseStrg(prova));
+var reverse ="";
+
+
+
+console.log("Stringa di base da girare :"+prova);
+
+console.log("Reverse generato con il for :"+reverseCycle(prova));
+
+
+console.log("Reverse generato con la funzione :"+(reverseStrg(prova)));
