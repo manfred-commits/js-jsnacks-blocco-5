@@ -4,9 +4,7 @@
 
 
 
-
-
-var zucchina = [
+var zucchine = [
     {   
         "varietà": "varietà-1",
         "peso": 500,
@@ -58,3 +56,17 @@ var zucchina = [
         "lunghezza": 10
     }
 ]
+console.log(zucchine);
+var piùDi=[];
+var menoDi=[];
+
+for(var key in zucchine){
+    if(zucchine[key]["lunghezza"]>15){
+        piùDi.push(zucchine[key]["lunghezza"]);
+    }else{
+        menoDi.push(zucchine[key]["lunghezza"]);
+    }
+    
+}
+console.log(piùDi);
+console.log(menoDi);
