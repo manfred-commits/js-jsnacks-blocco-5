@@ -10,14 +10,27 @@
 function arrBetween(num1, num2, array){
 
     let resultArr=[];
-
-    if(num1<num2 && num2<=array.length){
-        for(let i = num1; i<=num2; i++ ){
-            resultArr.push(array[i]);
-        }
+    while(resultArr==0){
         
-        return resultArr;
+        if(num1<num2 && num2<=array.length){
+            for(let i = num1; i<=num2; i++ ){
+                resultArr.push(array[i]);
+            }          
+            
+        }else if(num2>array.length){
+            while(num2>array.length){
+                let newNum= prompt("Inserisci un secondo numero, inferiore rispetto alla dimensione dell'array, di dimensioni pari a "+ array.length);
+                num2=newNum;
+            }
+        }else if(num1>=num2){
+            while(num1>=num2){
+                let newNum= prompt("Inserisci un primo numero, inferiore rispetto al secondo, che è pari a "+num2);
+                num1=newNum;
+            }
+        }
+
     }
+    return resultArr;
 
 }
 
@@ -28,8 +41,8 @@ function arrBetween(num1, num2, array){
 
 // SEZIONE PRINCIPALE DEL CODICE
 
-var num1=2;
-var num2=8;
+var num1=11;
+var num2=11;
 var array=[1,2,3,4,5,6,7,8,9,10];
 
 
