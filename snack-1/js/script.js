@@ -54,3 +54,9 @@ var zucchina = [
         "lunghezza": 10
     }
 ]
+var somma=0;
+
+for(var i=0; i<zucchina.length;i++){
+    somma+= zucchina[i]["peso"];
+}
+console.log(somma);
