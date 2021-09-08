@@ -68,5 +68,5 @@ for(var key in zucchine){
     }
     
 }
-console.log(piùDi);
-console.log(menoDi);
+console.log(`L'array con lunghezza superiore a 15 cm, è: ${piùDi}`);
+console.log(`L'array con lunghezza inferiore a 15 cm, è: ${menoDi}`);
